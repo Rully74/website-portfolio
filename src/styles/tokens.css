@@ -1,0 +1,37 @@
+:root {
+  /* colors */
+  --color-bg: rgba(10, 9, 17, 1);
+  --color-surface: rgba(20, 17, 34, 70);
+  --color-text: #F1F5F9;
+  --color-paragraph: #94A3B8;
+  --color-primary: #4B2BEE;
+  --color-secondary: #2ec4b6;
+  --color-gradient: linear-gradient(135deg, rgba(75, 43, 238, 1), rgba(192, 132, 252, 1));
+  --color-button-secondary: rgba(22, 20, 38, 1);
+
+  /* spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+
+  /* buttons */
+  --btn-padding-y: 0.75rem;
+  --btn-padding-x: 1.25rem;
+  --btn-radius: 8px;
+
+  /* layout */
+  --container-width: 1200px;
+  --page-padding: 2rem;
+
+  /* typography */
+  /* font sizes */
+  --font-size-text: 1rem;
+  --font-size-small: 0.875rem;
+  --font-size-smallest: 0.75rem;
+  --font-size-heading: 3.5rem;
+  /* font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}

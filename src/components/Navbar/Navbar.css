@@ -1,0 +1,40 @@
+.navbar {
+    width: 100%;
+    background-color: var(--color-surface);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.navbar-theme-button {
+    background-color: var(--color-primary);
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+}

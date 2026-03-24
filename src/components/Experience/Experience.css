@@ -1,0 +1,120 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    padding: 0 3rem;
+}
+
+.experience-title {
+  position: relative;
+}
+
+.experience-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-primary);
+  transform: translateX(-50%);
+  border-radius: 999px;
+}
+
+.experience-description {
+  font-size: var(--font-size-text);
+  color: var(--color-paragraph);
+  text-align: center;
+  max-width: 600px;
+}
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.experience-item{
+  position: relative;
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 16px;
+  padding: 0 0 34px 0;
+}
+
+.experience-item::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+}
+
+.experience-item:last-child::before {
+  bottom: 18px;
+}
+
+.timeline-marker {
+  position: relative;
+  z-index: 1;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--color-bg);
+}
+
+.timeline-content {
+  background: var(--color-surface);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 16px 24px;
+  max-width: 736px;
+}
+
+.timeline-content h4 {
+  margin: 0;
+  color: var(--color-primary);
+}
+
+.timeline-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline-content-header h3 {
+  margin: 0;
+}
+
+.duration-item {
+  font-size: var(--font-size-smallest);
+  color: var(--color-paragraph);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-weight: var(--font-weight-bold);
+}
+
+.experience-item-description {
+  font-size: var(--font-size-small);
+  color: var(--color-paragraph);
+  margin: 6px 0 0 0;
+}

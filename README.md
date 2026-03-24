@@ -1,16 +1,92 @@
-# React + Vite
+# Julian Ruiz Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built to present my profile as a Software Engineer, highlight my professional experience, and serve as a growing front-end project where I can refine both design and implementation decisions.
 
-Currently, two official plugins are available:
+This repository is not just a final showcase site. It is also part of my learning and iteration process, where I improve the UI, structure components, and shape the portfolio into a stronger representation of my work and professional identity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## React Compiler
+The current version includes:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- A navigation bar for key portfolio sections
+- A hero section with personal introduction and main calls to action
+- A professional experience timeline with real work history
+- A custom visual direction based on reusable design tokens
 
-## Expanding the ESLint configuration
+The goal of this project is to keep evolving it into a complete portfolio with projects, contact options, stronger branding, and polished interactions.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React 19
+- Vite
+- CSS
+- React Icons
+
+## Project Structure
+
+```text
+src/
+  components/
+    Navbar/
+    Hero/
+    Experience/
+  styles/
+    tokens.css
+  App.jsx
+  main.jsx
+```
+
+## Running Locally
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Build for production:
+
+```bash
+npm run build
+```
+
+5. Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Current Status
+
+This portfolio is actively in progress.
+
+Some parts are already implemented, while others are still placeholders or planned improvements. For example, the navigation includes sections that are not fully developed yet, and some assets and actions will be replaced with final personal content over time.
+
+## What I Want This Repository To Show
+
+- Clean component-based frontend structure
+- Progressive UI work instead of a one-shot template
+- Attention to readability, layout, and visual consistency
+- Real professional context behind the content, not only demo text
+
+## Planned Improvements
+
+- Add a projects section with selected case studies
+- Add a contact section
+- Replace placeholder assets with final branding and personal media
+- Improve responsiveness and accessibility
+- Add links for CV, LinkedIn, and other professional platforms
+- Refine interactions and theme behavior
+
+## Notes For Visitors
+
+If you are visiting this repository from GitHub, this project represents both my portfolio and my development process. I am using it to document growth in frontend development, UI thinking, and personal presentation as an engineer.
+
+Feedback, ideas, and suggestions are always welcome.
