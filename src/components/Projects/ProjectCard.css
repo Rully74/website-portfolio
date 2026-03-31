@@ -1,0 +1,88 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--color-surface);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.project-card-media {
+  margin: -20px -20px 0;
+}
+
+.project-card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-card-year {
+    font-size: var(--font-size-smallest);
+    background-color: rgba(75, 43, 238, 0.2);
+    color: var(--color-primary);
+    padding: 2px 8px;
+    border-radius: 16px;
+    font-weight: var(--font-weight-bold);
+}
+
+.project-card-description {
+    font-size: var(--font-size-small);
+    color: var(--color-paragraph);
+    margin: 0;
+}
+
+.project-card-stack {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-card-stack li {
+    font-size: var(--font-size-smallest);
+    color: rgba(75, 43, 238, 0.8);
+    background-color: rgba(75, 43, 238, 0.1);
+    border: 1px solid rgba(75, 43, 238, 0.2);
+    font-weight: var(--font-weight-medium);
+    padding: 2px 8px;
+    border-radius: 16px;
+}
+
+.project-card-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.project-button-live {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: var(--font-size-smallest);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+}
+
+.project-button-source {
+    border: 1px solid rgba(75, 43, 238, 0.3);
+    color: var(--color-primary);
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: var(--font-size-smallest);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+}

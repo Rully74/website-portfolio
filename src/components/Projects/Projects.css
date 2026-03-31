@@ -1,0 +1,35 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.projects-title {
+  position: relative;
+}
+
+.projects-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-primary);
+  border-radius: 999px;
+}
+
+.projects-description {
+    font-size: var(--font-size-text);
+    color: var(--color-paragraph);
+    max-width: 600px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 300px));
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: center;
+}

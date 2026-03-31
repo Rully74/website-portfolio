@@ -2,6 +2,11 @@ import "./Experience.css";
 import { HiOutlineCircleStack } from "react-icons/hi2";
 import { FaLaptopCode } from "react-icons/fa";
 
+/**
+ * Renders the experience section of the portfolio.
+ * This section includes a list of professional experiences, each with a role, company, duration, description, and an associated icon.
+ * @returns {JSX.Element} The rendered Experience component.
+ */
 function Experience() {
   const experiences = [
     {
