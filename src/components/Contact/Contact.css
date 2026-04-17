@@ -213,6 +213,26 @@ input::placeholder {
     height: 16px;
 }
 
+.contact-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.contact-status {
+    font-size: var(--font-size-small);
+    text-align: center;
+    margin: 0;
+}
+
+.contact-status--success {
+    color: var(--color-secondary);
+}
+
+.contact-status--error {
+    color: #ef4444;
+}
+
 .contact-note {
     font-size: var(--font-size-smallest);
     color: var(--color-paragraph);
