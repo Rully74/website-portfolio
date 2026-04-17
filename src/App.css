@@ -3,7 +3,11 @@ html {
 }
 
 section[id] {
-  scroll-margin-top: 2rem;
+  scroll-margin-top: 5rem;
+}
+
+main.page-container {
+  padding-top: 60px;
 }
 
 #root {

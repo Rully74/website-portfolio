@@ -7,7 +7,7 @@ import "./Hero.css";
  */
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero-information">
         <h1 className="hero-title">
           <span className="hero-title-line">Hi, I'm</span>
