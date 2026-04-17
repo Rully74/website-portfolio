@@ -21,8 +21,21 @@ function Hero() {
           that solves real-world problems.
         </p>
         <div className="hero-cta-container">
-          <button className="hero-button-primary">Download CV</button>
-          <button className="hero-button-secondary">LinkedIn</button>
+          <a
+            href="/cv/JulianRuizCV.pdf"
+            className="hero-button primary-button"
+            download
+          >
+            Download CV
+          </a>
+          <a
+            href="https://www.linkedin.com/in/julianruizo/"
+            className="hero-button secondary-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
         </div>
       </div>
       <div className="hero-image-container">

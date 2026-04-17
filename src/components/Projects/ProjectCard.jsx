@@ -1,4 +1,6 @@
 import "./ProjectCard.css";
+import { IoMdOpen } from "react-icons/io";
+import { IoMdCode } from "react-icons/io";
 
 /**
  * Renders a card component for a project, displaying its image, title, year, description, technology stack, and links to a live demo and source code.
@@ -24,7 +26,13 @@ function ProjectCard({
   return (
     <div className="project-card">
       <div className="project-card-media">
-        <img className="project-card-image" src={image} alt={title} />
+        <img
+          className="project-card-image"
+          src={image}
+          alt={title}
+          loading="lazy"
+          decoding="async"
+        />
       </div>
       <div className="project-card-header">
         <h3 className="project-card-title">{title}</h3>
@@ -38,20 +46,22 @@ function ProjectCard({
       </ul>
       <div className="project-card-buttons">
         <a
-          className="project-button-live"
+          className="project-button project-button-live"
           href={liveDemo}
           target="_blank"
           rel="noopener noreferrer"
         >
-          Live Demo
+          <IoMdOpen className="button-icon" />
+          <p>Live Demo</p>
         </a>
         <a
-          className="project-button-source"
+          className="project-button project-button-source"
           href={sourceCode}
           target="_blank"
           rel="noopener noreferrer"
         >
-          View Code
+          <IoMdCode className="button-icon" />
+          <p>View Code</p>
         </a>
       </div>
     </div>

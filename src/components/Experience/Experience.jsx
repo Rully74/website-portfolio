@@ -28,7 +28,7 @@ function Experience() {
   ];
 
   return (
-    <section className="experience">
+    <section id="experience" className="experience">
       <h2 className="experience-title">Professional experience</h2>
       <p className="experience-description">
         A brief look at the professional experience where I’ve built,

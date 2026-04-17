@@ -1,5 +1,8 @@
 import "./Projects.css";
 import { ProjectCard } from "./ProjectCard";
+import imgPortfolioWeb from "../../assets/projects/PortfolioWeb.webp";
+import imgOledge from "../../assets/projects/Oledge.webp";
+import imgUltimoBrote from "../../assets/projects/UltimoBrote.webp";
 
 /**
  * Renders a section displaying a grid of project cards and a description.
@@ -8,8 +11,7 @@ import { ProjectCard } from "./ProjectCard";
 function Projects() {
   const projects = [
     {
-      image:
-        "https://img.freepik.com/psd-gratis/ilustracion-3d-electronica-icono-mundo-digital_23-2151267722.jpg?semt=ais_hybrid&w=740&q=80",
+      image: imgPortfolioWeb,
       title: "Portfolio Web",
       year: "2026",
       description:
@@ -19,8 +21,7 @@ function Projects() {
       sourceCode: "https://github.com/example/project1",
     },
     {
-      image:
-        "https://img.freepik.com/psd-gratis/ilustracion-3d-electronica-icono-mundo-digital_23-2151267722.jpg?semt=ais_hybrid&w=740&q=80",
+      image: imgOledge,
       title: "OLEDGE",
       year: "2023",
       description:
@@ -39,7 +40,7 @@ function Projects() {
     },
     {
       image:
-        "https://img.freepik.com/psd-gratis/ilustracion-3d-electronica-icono-mundo-digital_23-2151267722.jpg?semt=ais_hybrid&w=740&q=80",
+        imgUltimoBrote,
       title: "EL ÚLTIMO BROTE",
       year: "2022",
       description:
@@ -49,7 +50,7 @@ function Projects() {
   ];
 
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <h2 className="projects-title">Projects</h2>
       <p className="projects-description">
         A selection of projects where I’ve explored ideas, solved problems, and

@@ -67,22 +67,29 @@
     margin-top: auto;
 }
 
-.project-button-live {
-    background-color: var(--color-primary);
-    color: var(--color-text);
+.project-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     padding: 6px 16px;
     border-radius: 8px;
     font-size: var(--font-size-smallest);
     font-weight: var(--font-weight-bold);
     text-decoration: none;
+    height: var(--btn-height);
+}
+
+.project-button-live {
+    background-color: var(--color-primary);
+    color: var(--color-text);
 }
 
 .project-button-source {
     border: 1px solid rgba(75, 43, 238, 0.3);
     color: var(--color-primary);
-    padding: 6px 16px;
-    border-radius: 8px;
-    font-size: var(--font-size-smallest);
-    font-weight: var(--font-weight-bold);
-    text-decoration: none;
+}
+
+.button-icon {
+    width: 16px;
+    height: 16px;
 }
