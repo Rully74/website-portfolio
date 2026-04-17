@@ -45,24 +45,28 @@ function ProjectCard({
         ))}
       </ul>
       <div className="project-card-buttons">
-        <a
-          className="project-button project-button-live"
-          href={liveDemo}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <IoMdOpen className="button-icon" />
-          <p>Live Demo</p>
-        </a>
-        <a
-          className="project-button project-button-source"
-          href={sourceCode}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <IoMdCode className="button-icon" />
-          <p>View Code</p>
-        </a>
+        {liveDemo && (
+          <a
+            className="project-button project-button-live"
+            href={liveDemo}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoMdOpen className="button-icon" />
+            <p>Live Demo</p>
+          </a>
+        )}
+        {sourceCode && (
+          <a
+            className="project-button project-button-source"
+            href={sourceCode}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoMdCode className="button-icon" />
+            <p>View Code</p>
+          </a>
+        )}
       </div>
     </div>
   );

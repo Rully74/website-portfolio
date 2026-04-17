@@ -17,8 +17,8 @@ function Projects() {
       description:
         "Personal portfolio website built to showcase my experience as a Software Engineer, with a focus on clean UI, scalable frontend structure, and continuous improvement.",
       stack: ["React", "Vite", "JavaScript", "CSS", "Figma", "Git"],
-      liveDemo: "https://example.com/project1",
-      sourceCode: "https://github.com/example/project1",
+      liveDemo: "https://rully.dev",
+      sourceCode: "https://github.com/Rully74/website-portfolio",
     },
     {
       image: imgOledge,
@@ -35,17 +35,18 @@ function Projects() {
         "CSS",
         "GitHub",
       ],
-      liveDemo: "https://example.com/project2",
-      sourceCode: "https://github.com/example/project2",
+      liveDemo:
+        "https://uao-my.sharepoint.com/:f:/g/personal/julian_hernando_ruiz_uao_edu_co/IgDIrdw9jVnlTaUhzuvfCon9ARHOJwBLtJe87Mx06QRtxrs?e=NMHV5q",
     },
     {
-      image:
-        imgUltimoBrote,
+      image: imgUltimoBrote,
       title: "EL ÚLTIMO BROTE",
       year: "2022",
       description:
         "A multimedia program designed to raise students' awareness of environmental conservation in La Cumbre Valle. It included virtual reality, challenges, and a fictional story. The program concluded with a tree-planting activity and the use of QR codes by students to personalize their experience.",
       stack: ["Unity", "C#", "Vuforia Engine", "Firebase", "Blender"],
+      liveDemo:
+        "https://uao-my.sharepoint.com/:f:/g/personal/julian_hernando_ruiz_uao_edu_co/IgAy2Xc2DJYfSZ29ERI9J6DYAavgGP_z1qCZQUyNunj9K68?e=ABDwRg",
     },
   ];
 

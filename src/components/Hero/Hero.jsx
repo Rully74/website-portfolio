@@ -40,7 +40,7 @@ function Hero() {
       </div>
       <div className="hero-image-container">
         <div className="hero-image">
-          <img src="/vite.svg" alt="Hero Image" />
+          <img src="/hero.webp" alt="Hero Image" />
         </div>
       </div>
     </section>
