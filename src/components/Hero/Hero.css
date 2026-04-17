@@ -58,6 +58,11 @@
     border-radius: var(--btn-radius);
     cursor: pointer;
     color: var(--color-text);
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.hero-button:hover {
+    transform: translateY(-2px);
 }
 
 .primary-button {
@@ -65,9 +70,18 @@
     border: none;
 }
 
+.primary-button:hover {
+    background-color: rgba(75, 43, 238, 0.8);
+}
+
 .secondary-button {
     background-color: var(--color-button-secondary);
     border: 1px solid rgba(41, 35, 72, 1);
+}
+
+.secondary-button:hover {
+    background-color: rgba(75, 43, 238, 0.15);
+    border-color: rgba(75, 43, 238, 0.6);
 }
 
 .hero-image-container {

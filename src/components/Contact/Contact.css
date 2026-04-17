@@ -104,12 +104,22 @@
     width: 24px;
     height: 24px;
     text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
 }
 
 .social-icon {
     color: #CBD5E1;
     width: 24px;
     height: 24px;
+    transition: color 0.2s ease;
+}
+
+.social-link:hover .social-icon {
+    color: var(--color-primary);
 }
 
 .contact-form-container {
@@ -186,6 +196,12 @@ input::placeholder {
     font-weight: var(--font-weight-bold);
     cursor: pointer;
     height: var(--btn-height);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.contact-button:hover {
+    transform: translateY(-2px);
+    background-color: rgba(75, 43, 238, 0.8);
 }
 
 .contact-button p {

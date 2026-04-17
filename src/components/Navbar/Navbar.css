@@ -56,6 +56,11 @@
     color: var(--color-text);
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-medium);
+    transition: color 0.2s ease;
+}
+
+.navbar-links li a:hover {
+    color: var(--color-primary);
 }
 
 .navbar-theme-button {
@@ -133,5 +138,10 @@
         color: var(--color-text);
         font-size: 1.25rem;
         font-weight: var(--font-weight-medium);
+        transition: color 0.2s ease;
+    }
+
+    .mobile-menu-links li a:hover {
+        color: var(--color-primary);
     }
 }
