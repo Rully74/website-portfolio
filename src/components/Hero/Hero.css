@@ -123,6 +123,11 @@
         margin-top: 4rem;
     }
 
+    .hero-image img {
+        width: 300px;
+        height: 300px;
+    }
+
     .hero-information {
         align-items: center;
         text-align: center;

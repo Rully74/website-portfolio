@@ -69,6 +69,7 @@ function Projects() {
             stack={project.stack}
             liveDemo={project.liveDemo}
             sourceCode={project.sourceCode}
+            delay={index * 150}
           />
         ))}
       </div>

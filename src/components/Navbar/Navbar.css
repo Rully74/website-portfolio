@@ -15,7 +15,7 @@
 }
 
 .navbar--scrolled {
-    top: 12px;
+    top: 20px;
     max-width: min(90%, var(--container-width));
     border-radius: 16px;
     background: rgba(20, 17, 34, 0.6);

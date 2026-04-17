@@ -1,6 +1,7 @@
 import "./ProjectCard.css";
 import { IoMdOpen } from "react-icons/io";
 import { IoMdCode } from "react-icons/io";
+import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 /**
  * Renders a card component for a project, displaying its image, title, year, description, technology stack, and links to a live demo and source code.
@@ -22,9 +23,16 @@ function ProjectCard({
   stack,
   liveDemo,
   sourceCode,
+  delay = 0,
 }) {
+  const ref = useScrollReveal();
+
   return (
-    <div className="project-card">
+    <div
+      className="project-card scroll-reveal"
+      ref={ref}
+      style={{ transitionDelay: `${delay}ms` }}
+    >
       <div className="project-card-media">
         <img
           className="project-card-image"

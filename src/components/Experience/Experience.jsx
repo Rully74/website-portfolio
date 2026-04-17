@@ -1,12 +1,38 @@
 import "./Experience.css";
 import { HiOutlineCircleStack } from "react-icons/hi2";
 import { FaLaptopCode } from "react-icons/fa";
+import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 /**
  * Renders the experience section of the portfolio.
  * This section includes a list of professional experiences, each with a role, company, duration, description, and an associated icon.
  * @returns {JSX.Element} The rendered Experience component.
  */
+function ExperienceItem({ exp, delay }) {
+  const ref = useScrollReveal();
+
+  return (
+    <li
+      className="experience-item scroll-reveal"
+      ref={ref}
+      style={{ transitionDelay: `${delay}ms` }}
+    >
+      <div className="timeline-marker" aria-hidden="true">
+        <span className="timeline-icon">{exp.icon}</span>
+      </div>
+
+      <article className="timeline-content">
+        <div className="timeline-content-header">
+          <h3>{exp.role}</h3>
+          <span className="duration-item">{exp.duration}</span>
+        </div>
+        <h4>{exp.company}</h4>
+        <p className="experience-item-description">{exp.description}</p>
+      </article>
+    </li>
+  );
+}
+
 function Experience() {
   const experiences = [
     {
@@ -37,20 +63,7 @@ function Experience() {
 
       <ol className="experience-list">
         {experiences.map((exp, index) => (
-          <li key={index} className="experience-item">
-            <div className="timeline-marker" aria-hidden="true">
-              <span className="timeline-icon">{exp.icon}</span>
-            </div>
-
-            <article className="timeline-content">
-              <div className="timeline-content-header">
-                <h3>{exp.role}</h3>
-                <span className="duration-item">{exp.duration}</span>
-              </div>
-              <h4>{exp.company}</h4>
-              <p className="experience-item-description">{exp.description}</p>
-            </article>
-          </li>
+          <ExperienceItem key={index} exp={exp} delay={index * 200} />
         ))}
       </ol>
     </section>
